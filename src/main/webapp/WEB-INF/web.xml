@@ -4,4 +4,9 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>IMC</servlet-name>
+  	<servlet-class>/controller</servlet-class>
+  </servlet>
 </web-app>

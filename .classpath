@@ -28,5 +28,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/cintia/Documentos/Documentos_Renan/Projetos/Programas/driver/servlet-api-3.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
