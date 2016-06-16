@@ -9,4 +9,14 @@
   	<servlet-name>IMC</servlet-name>
   	<servlet-class>/controller</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>testeteste</servlet-name>
+  	<display-name>testeteste</display-name>
+  	<description></description>
+  	<servlet-class>teste.testeteste</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>testeteste</servlet-name>
+  	<url-pattern>/testeteste</url-pattern>
+  </servlet-mapping>
 </web-app>

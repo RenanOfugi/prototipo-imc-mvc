@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Calculo IMC</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico">
@@ -19,50 +20,50 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<a class="navbar-brand" href="file:///home/cintia/Documentos/Documentos_Renan/Projetos/Programas/WEB/temp/IMC.html#">CÃ¡lculo-IMC</a>
+					<a class="navbar-brand" href="file:///home/cintia/Documentos/Documentos_Renan/Projetos/Programas/WEB/temp/IMC.html#">Cálculo-IMC</a>
 				</div>
 			</div>
 		</div>
 	</header>
 
-  <form action="servlet">
-    <fieldset class="form-group">
+  <form action="/imc-servlets/imc">
+    <div class="form-group">
       <label for="altura">Altura</label>
-      <input type="text" name="altura">
-    </fieldset>
+      <input type="text" name="altura" id="altura">
+    </div>
 
-    <fieldset class="form-group">
+    <div class="form-group">
       <label for="Peso">Peso</label>
-      <input type="text" name="peso">
-    </fieldset>
+      <input type="text" name="peso" id="peso">
+    </div>
 
     <div class="form-inline">
       <div class="radio">
-        <fieldset class="form-group">
-          <label for="masc">
+        <div class="form-group">
+          <label>
             <input type="radio" name="escolha" checked>
             masculino
           </label>
-        </fieldset>
+        </div>
       </div>
 
       <div class="radio fem">
-        <fieldset class="form-group">
-          <label for="fem">
+        <div class="form-group">
+          <label>
             <input type="radio" name="escolha">
             feminino
           </label>
-        </fieldset>
+        </div>
       </div>
     </div>
 
     <div class="form-group" id="botao">
-      <input type="submit" name="name" value="Calcular">
+      <button type="submit">Calcular</button>
     </div>
 
   </form>
   
-  <div class="results">
+  <div class="form-group">
      <b>Resultado = ${resultado}</b>
    </div>
   </body>

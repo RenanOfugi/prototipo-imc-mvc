@@ -13,6 +13,8 @@ import model.regrasIMC;
 @WebServlet("/imc")
 public class ImcController extends HttpServlet{
 	
+	private static final long serialVersionUID = 1L;
+
 	private String valor(HttpServletRequest req, String param, String padrao){
 		
 		String result = req.getParameter(param);
@@ -20,7 +22,7 @@ public class ImcController extends HttpServlet{
 			result = padrao;
 		}
 		
-		return padrao;
+		return result;
 	}
 	
 	private float transform(HttpServletRequest req, String name, String value){
